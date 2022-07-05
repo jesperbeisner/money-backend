@@ -1,5 +1,6 @@
 # Money Backend
 
+## Setup
 ```bash
 # 1. Start the docker containers
 docker-compose up -d
