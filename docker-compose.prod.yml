@@ -3,7 +3,7 @@ version: '3.9'
 services:
   web:
     image: caddy:2.5.1-alpine
-    container_name: money-caddy-prod
+    container_name: money-backend-caddy-prod-container
     volumes:
       - .:/var/www/html/
       - ./docker/caddy:/etc/caddy/
@@ -12,6 +12,6 @@ services:
 
   php:
     build: ./docker/php
-    container_name: money-php-prod
+    container_name: money-backend-php-prod-container
     volumes:
       - .:/var/www/html/
